@@ -11,8 +11,9 @@
     color:rgb(215, 241, 153);
     font-size: 40px;
     background-color: rgb(255, 0, 0);   /*Background color for each header*/
-    width: 900px;
+    width: 885px;
     margin-bottom: -20px;
+    padding-left: 20px
 }
 
 section{    
@@ -26,5 +27,15 @@ img{
     border: 1px solid green;
     padding: 5px;   /*Photo padding*/
     margin-left: 100px;
-    height: 180px;
+    height: 160px;
+}
+
+h3{
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+ul,ol{
+    padding-left: 80px; 
+    margin-top: 10px;
 }
