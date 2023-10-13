@@ -1,33 +1,46 @@
+
+
 #main-heading{
-    color:blueviolet;
+    font-size: 75px;
     text-align: center;
-    font-size: 50px;
+    color: brown;   /*Main header text in a different color*/
+    margin-bottom: 20px;
 }
 
-#fresh-produce{
+.sub-heading{
+    color:rgb(215, 241, 153);
     font-size: 40px;
-    /* display:inline-block; */
+    background-color: rgb(255, 0, 0);   /*Background color for each header*/
+    width: 885px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 50px;
 }
 
-#list-1{
-    color:aqua;
-    font-size: 30px;
-    float:left;
-    /* display:inline-block; */
-    /* width:321px;
-    vertical-align:top;  */
+
+section{    
+    background-color: aquamarine;   /*Background color for each section*/
+    margin-bottom: -50px;
+    margin-right: -50px;
+    border: 1px solid green;/* CSS Box model*/ 
+    height: 225px;
 }
 
-#list-1a,#list-2a{
-    font-size: 20px;
-    /* display:inline-block; */
-    /* width:321px;
-   vertical-align:top; */ 
+img{
+    width: 300px;
+    border: 1px solid green;
+    padding: 5px;   /*Photo padding*/
+    margin-left: 100px;
+    height: 200px;
 }
 
-#list-2{
-    color:aqua;
-    font-size: 30px;
-    float:right;
-    /* display:inline-block; */
+h3{
+    padding-left: 25px;
+    margin-bottom: 10px;
 }
+
+ul,ol{
+    padding-left: 80px; 
+    margin-top: 10px;
+}
+
