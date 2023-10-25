@@ -2,7 +2,7 @@
 
 #main-heading{
     color: black;
-    text-indent: 30%;   /*unit*/   
+    text-align: center;    
     background-color: brown;
 }
 
@@ -11,21 +11,21 @@
     display: flex;      /*flex*/
     flex-direction: row;
     background-color: bisque;
-    height: 30vw;
+    height: 500px;
 }
 
 #box-1,#box-2{
-    flex: 50%;
+    flex: 50%;      /*unit*/
     border: solid green  ;
-    border-radius: 1vw;    
-    height: 15vw;     
+    border-radius: 2px;     /*unit*/    
+    height: 150px;     
 }
 
 #box-1{
     z-index: 2;     /*z-index*/
     position:relative;
-    left: 15vw;
-    top: 10vw;
+    left: 10px;
+    top: 100px;
     background-color: aqua;
     flex:30%;
 }
@@ -33,8 +33,8 @@
 #box-2{
     z-index: 1;     /*z-index*/
     position:relative;
-    right: 30vw;
-    top: 5vw;
+    right: 300px;
+    top: 10px;
     background-color:aquamarine;
 }
 
@@ -44,12 +44,12 @@
     /* grid-template-rows: repeat(2,1,fr); */
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto auto;
-    gap: 1vw;  
+    gap: 2px;  
     position: relative;
-    left: 10%;      /*unit*/
+    left: 10%;      
     top: 10%;
-    border: solid red 0.2vw;   /*shorthand*/
-    font-size: 2vw;
+    border: solid red 2px;   /*shorthand*/
+    font-size: 25px;
 }
 
 #the{
@@ -71,26 +71,117 @@
 }
 
 form{
-    font-size: 3vw;
+    font-size: 30px;
+    text-align: center;
 }
 
 .textboxid{
-    height:2.8vw;
-    font-size:2vw;
+    height:33px;
+    /* font-size:100px; */
 }
 
 h6{
-    margin: 0px; /*unit*/
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 
-@media screen and (max-width:500px) and (min-width:70px){
-#top-container{
-    height: 50vw;
+
+#container {
+    width:1500px;
+    border: solid purple 1px;
+    margin:0 auto;
+    height: 2000px;
 }
-#box-1,#box-2{    
-    height: 25vw;     
-}
-#mini-container1{
-    font-size: 3.5vw;
-}
+
+@media screen and (max-width: 1280px) {
+    #main-heading{
+        color: black;
+        text-align: left;   /*unit*/   
+        background-color: brown;
+        font-size: 3.5vw;       /*unit*/
+    }
+    
+    
+    #top-container{
+        display: flex;      /*flex*/
+        flex-direction: row;
+        background-color: bisque;
+        height: 30vw;
+        /* width:fit-content ; */
+    }
+    
+    #box-1,#box-2{
+        display: flex;
+        flex: 50%;
+        border: solid green 0.25vw  ;    
+        height: 10vw;     
+        
+    }
+    
+    #box-1{
+        display: flex;
+        z-index: 2;     /*z-index*/
+        position:relative;
+        left: 0.2vw !important;
+        top: 5vw;
+        background-color: aqua;
+        flex:30%;
+        width: 20vw !important;
+    }
+    
+    #box-2{
+        display: flex;
+        z-index: 1;     /*z-index*/
+        position:relative;
+        left: -16.5vw !important;
+        top: 1vw;
+        background-color:aquamarine;
+        width: 40vw !important
+    }
+    
+    #mini-container1{
+        display: grid;      /*grid*/
+        width: 50%;
+        height: fit-content;
+        /* grid-template-rows: repeat(2,1,fr); */
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+        gap: 0.25vw   ;  
+        position: relative;
+        left: 10%;      
+        top: 10%;
+        border: solid red 0.1vw;   /*shorthand*/
+        font-size: 1vw;
+    }
+
+    form{
+        font-size: 2vw;
+        text-align: left;
+        margin-left: 2vw;
+    }
+    
+    .textboxid{
+        height:3vw;
+        font-size: 2vw;
+    }
+    
+    h6{
+        margin-top: 1vw; /*unit*/
+        margin-bottom: 1vw;
+        margin-left: 2vw;
+        font-size: 3vw;
+    }
+    
+    
+    #container {
+        width:fit-content !important;
+        border: solid purple 1px;
+        margin:0 auto;
+        height: fit-content;
+    }
+    
+
 }

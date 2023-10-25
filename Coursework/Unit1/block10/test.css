@@ -1,0 +1,42 @@
+#boxes{
+    display: flex;
+    flex-direction: row;
+    border: solid yellowgreen 2px;
+}
+#flags{
+    display: flex;
+    flex-direction: row;
+}
+#nepal{
+    z-index: 2;
+    position: relative;
+    left: 100px;
+}
+#india{
+    z-index: 1;
+    position: relative;
+
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+/* body{
+    max-width: 1600px;
+    max-height: 2500px;
+    border: solid green 1px;
+    margin:0 auto  
+} */
+
+img{
+    /* width: 100%; */
+    height: 200px !important;
+}
+#container {
+
+    width:900px;
+    border: solid purple 1px;
+    margin:0 auto;
+    height: 2000px;
+    
+    }
